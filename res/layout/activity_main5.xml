@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".Main5Activity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_chemp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line2">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1_2"
+            android:drawableTop="@drawable/ic_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="newsClick"
+            android:drawablePadding="-15dp"
+            android:text="@string/tabbed_menu"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/button2_2"
+            android:drawableTop="@drawable/ic_list_chemp_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:drawablePadding="-10dp"
+            android:text="Список чемпионатов"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button3_2"
+            android:drawableTop="@drawable/ic_list_people"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="list_peopleClick"
+            android:drawablePadding="-10dp"
+            android:text="Список участников"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/button4_2"
+            android:drawableTop="@drawable/ic_list_gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="gallery1Click"
+            android:drawablePadding="-15dp"
+            android:text="Галерея"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
